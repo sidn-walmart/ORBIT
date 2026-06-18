@@ -90,3 +90,24 @@ The agent can reconstruct meeting summaries even when Microsoft Loop fails to ge
 ---
 
 ## Source Priority
+
+Internal Walmart documentation is always checked before external sources.
+
+---
+
+## Output Format
+
+All responses include:
+- **Summary** — 2–4 sentence answer
+- **Details** — full explanation with context
+- **Sources** — every claim linked to a source
+- **Recommended Actions** — actionable next steps
+- **Confidence** — High / Medium / Low with rationale
+
+CISA KEV entries are flagged `⚠️ KEV`. Stale internal docs (>6 months) are flagged `⚠️ Potentially stale`.
+
+---
+
+## Installation
+
+Place `ot-onboarding-agent.md` in `~/.wibey/agents/` and restart Wibey. The agent will be available as `ot-onboarding-agent` across all Wibey sessions.
