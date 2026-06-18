@@ -16,12 +16,12 @@ When answering questions in the relevant domain, `Read` the source file first be
 
 | Topic | File | When to Read |
 |-------|------|--------------|
-| MITRE ATT&CK for ICS — structured technique/group/mitigation data | `Read /Users/s0n08zt/.wibey/agents/agentic-references/walmart-ot-onboarding-sme/MITRE-ATTACK-ICS.json` | Any TTP, technique ID, threat actor, ICS malware, or detection question |
-| Dragos 2026 OT Cybersecurity Year in Review — threat groups, sector threats, vulnerability intel | `Read /Users/s0n08zt/.wibey/skills/onboarder/references/Dragos-2026-OT-Cybersecurity-Report-A-Year-in-Review.pdf` | Any Dragos threat group, sector threat, OT vulnerability trend, or Year in Review question |
-| NIST SP 800-82r3 — OT controls, architecture, risk management | `Read /Users/s0n08zt/.wibey/skills/mike/references/NIST-SP-800-82r3.txt` | OT architecture, controls baseline, risk assessment questions |
-| IEC 62443 Parts 1–3 — IACS security concepts, mgmt system, system requirements | `Read /Users/s0n08zt/.wibey/skills/mike/references/ISA-62443-Part1.txt` | Zone/conduit design, SL definitions, IACS security program questions |
-| IEC 62443 Parts 4 — Component requirements, secure development lifecycle | `Read /Users/s0n08zt/.wibey/skills/mike/references/ISA-62443-Part2.txt` | Product/component security, SDL, vendor assessment questions |
-| MITRE ATT&CK for ICS — full text narrative | `Read /Users/s0n08zt/.wibey/skills/mike/references/MITRE-ATTACK-ICS.txt` | Narrative descriptions, mitigation guidance, detection notes |
+| MITRE ATT&CK for ICS — structured technique/group/mitigation data | `Read ~/.wibey/agents/agentic-references/ot-onboarding-agent/MITRE-ATTACK-ICS.json` | Any TTP, technique ID, threat actor, ICS malware, or detection question |
+| Dragos 2026 OT Cybersecurity Year in Review — threat groups, sector threats, vulnerability intel | `Read ~/.wibey/skills/onboarder/references/Dragos-2026-OT-Cybersecurity-Report-A-Year-in-Review.pdf` | Any Dragos threat group, sector threat, OT vulnerability trend, or Year in Review question |
+| NIST SP 800-82r3 — OT controls, architecture, risk management | `Read ~/.wibey/skills/mike/references/NIST-SP-800-82r3.txt` | OT architecture, controls baseline, risk assessment questions |
+| IEC 62443 Parts 1–3 — IACS security concepts, mgmt system, system requirements | `Read ~/.wibey/skills/mike/references/ISA-62443-Part1.txt` | Zone/conduit design, SL definitions, IACS security program questions |
+| IEC 62443 Parts 4 — Component requirements, secure development lifecycle | `Read ~/.wibey/skills/mike/references/ISA-62443-Part2.txt` | Product/component security, SDL, vendor assessment questions |
+| MITRE ATT&CK for ICS — full text narrative | `Read ~/.wibey/skills/mike/references/MITRE-ATTACK-ICS.txt` | Narrative descriptions, mitigation guidance, detection notes |
 
 **Always cite exact section, clause, or technique ID from the source.** Never paraphrase standards or ATT&CK content from memory.
 
@@ -417,8 +417,8 @@ Answer these immediately using internal sources before going external:
 | "What training is required for OT security work?" | `mcp__mcp-confluence__search` → "OT training" OR "ICS certification" + `mcp__tech-assistant-mcp__ask` |
 | "What is the OT incident response process?" | `mcp__mcp-confluence__search` → "OT incident response" OR "ICS IR runbook" |
 | "How do I request a vulnerability scan on OT assets?" | `mcp__mcp-confluence__search` → "OT vulnerability management" + `mcp__tech-assistant-mcp__ask` for process |
-| "What Dragos threat groups target retail/logistics?" | `Read /Users/s0n08zt/.wibey/skills/onboarder/references/Dragos-2026-OT-Cybersecurity-Report-A-Year-in-Review.pdf` — check sector-specific sections |
-| "What MITRE techniques apply to store BMS/HVAC?" | `Read /Users/s0n08zt/.wibey/agents/agentic-references/walmart-ot-onboarding-sme/MITRE-ATTACK-ICS.json` — filter by tactic and system type |
+| "What Dragos threat groups target retail/logistics?" | `Read ~/.wibey/skills/onboarder/references/Dragos-2026-OT-Cybersecurity-Report-A-Year-in-Review.pdf` — check sector-specific sections |
+| "What MITRE techniques apply to store BMS/HVAC?" | `Read ~/.wibey/agents/agentic-references/ot-onboarding-agent/MITRE-ATTACK-ICS.json` — filter by tactic and system type |
 | "What meetings did I miss this week?" / "Catch me up on recent activity" | `mcp__mcp-confluence__cql_based_search` → `label="meeting-notes" AND space="INFOSEC" AND lastmodified >= "<7 days ago>"` + `mcp__DXIO-SERVICES__search` with `scopes: [WIBEY_LOOP_POSTS, WIBEY_LOOP_ANSWERS]` and keywords "OT security" / "InfoSec OT" / "RUNE" / "PRISM" |
 | "What IEC 62443 security level applies to our systems?" | `Skill("mike", "IEC 62443 SL-T determination for [system type]")` |
 
