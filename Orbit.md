@@ -24,6 +24,17 @@ skills: iot-ssp-evaluate-html, msgraph, wcnp-t12r-agent, browser-control, mike, 
 subagent_type: ".wibey:orbit"
 ```
 
+**Create the agent folder (first-time setup):**
+```bash
+# Create the agents directory and clone the ORBIT repo
+mkdir -p ~/.wibey/agents
+cd ~/.wibey/agents
+git clone https://github.com/sidn-walmart/ORBIT.git .
+
+# Or if the folder already exists, pull the latest
+cd ~/.wibey/agents && git pull
+```
+
 ---
 
 ## Primary Sources (Read Before Answering)
