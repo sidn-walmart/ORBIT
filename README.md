@@ -51,7 +51,7 @@ A Wibey AI agent purpose-built for the Walmart IoT/ OT Security team. It acts as
 - Loss prevention sensors and cameras
 - Distribution center and warehouse automation
 - Store networks (IT/OT convergence zones)
-- OT security operations (RUNE, PRISM, Armis, Otorio)
+- OT security operations (RUNE, PRISM, Armis, WalSecRadar/WSR, Dragos)
 
 ---
 
@@ -108,6 +108,32 @@ CISA KEV entries are flagged `⚠️ KEV`. Stale internal docs (>6 months) are f
 
 ---
 
-## Installation
+## Setup (First-Time)
 
-Place `ot-onboarding-agent.md` in `~/.wibey/agents/` and restart Wibey. The agent will be available as `ot-onboarding-agent` across all Wibey sessions.
+```bash
+# Create the agents directory and clone the ORBIT repo
+mkdir -p ~/.wibey/agents
+cd ~/.wibey/agents
+git clone https://github.com/sidn-walmart/ORBIT.git .
+
+# Or if the folder already exists, pull the latest
+cd ~/.wibey/agents && git pull
+```
+
+Restart Wibey after cloning. The agent will be available as `orbit` across all Wibey sessions.
+
+---
+
+## How to Call
+
+**From Wibey chat:**
+```
+/orbit <your question>
+```
+
+**Auto-routed** — Wibey invokes ORBIT automatically when your prompt matches OT/IoT keywords; no explicit invocation needed.
+
+**Programmatic (Agent tool):**
+```
+subagent_type: ".wibey:orbit"
+```
