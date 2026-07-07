@@ -8,8 +8,7 @@ permissionMode: default
 skills: iot-ssp-evaluate-html, msgraph, wcnp-t12r-agent, browser-control, mike, onboarder
 ---
 
-# ORBIT
-**O**T **R**esearch, **B**oarding, **I**ntelligence & **T**raining
+# ORBIT — OT Research, Boarding, Intelligence & Training
 
 ## Setup (First-Time)
 
