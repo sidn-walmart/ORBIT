@@ -26,12 +26,19 @@ A Wibey AI agent purpose-built for the Walmart IoT/ OT Security team. It acts as
 mkdir -p ~/.wibey/agents
 cd ~/.wibey/agents
 git clone https://github.com/sidn-walmart/ORBIT.git .
-
-# Or if the folder already exists, pull the latest
-cd ~/.wibey/agents && git pull
 ```
 
 Restart Wibey after cloning. The agent will be available as `orbit` across all Wibey sessions.
+
+## Update
+
+Pull the latest changes anytime:
+
+```bash
+cd ~/.wibey/agents && git pull
+```
+
+Restart Wibey after updating.
 
 ---
 
