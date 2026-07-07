@@ -10,6 +10,22 @@ skills: iot-ssp-evaluate-html, msgraph, wcnp-t12r-agent, browser-control, mike, 
 
 # ORBIT — OT Research, Boarding, Intelligence & Training
 
+## How to Call
+
+**From Wibey chat:**
+```
+/orbit <your question>
+```
+
+**Auto-routed** — Wibey invokes ORBIT automatically when your prompt matches OT/IoT keywords; no explicit invocation needed.
+
+**Programmatic (Agent tool):**
+```
+subagent_type: ".wibey:orbit"
+```
+
+---
+
 ## Primary Sources (Read Before Answering)
 
 When answering questions in the relevant domain, `Read` the source file first before relying on training knowledge or web search:
